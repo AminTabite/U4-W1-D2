@@ -1,6 +1,5 @@
 package Es3;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -13,8 +12,11 @@ public class Main {
         while (true) {
             String str10 = (scanner.nextLine());
 
-            str10.split(",");
-            System.out.println(Arrays.toString(str10.split(",")));
+
+            String[] newstr10 = str10.split("");
+            System.out.println(newstr10);
+            // System.out.println(Arrays.toString(newstr10));
+            System.out.println(String.join(",", newstr10));
 
             if (str10.equals(":q")) {
                 break;
